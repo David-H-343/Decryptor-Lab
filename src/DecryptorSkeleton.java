@@ -84,7 +84,8 @@ public class DecryptorSkeleton {
      */
     public static void shiftArrayValues(int[] toDecrypt) {
     	for(int i = 0; i < toDecrypt.length; i++) {
-    		if(i % 3 == 0) {
+    		toDecrypt[i] -= 1 - (toDecrypt[i] % 3);
+    		/*if(i % 3 == 0) {
     			toDecrypt[i] -= 1;
     		}
     		else if(i % 3 == 1) {
@@ -92,7 +93,7 @@ public class DecryptorSkeleton {
     		}
     		else {
     			toDecrypt[i] -= 3;
-    		}
+    		}*/
     	}
     }
 
