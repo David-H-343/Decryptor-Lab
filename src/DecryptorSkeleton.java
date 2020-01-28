@@ -84,7 +84,7 @@ public class DecryptorSkeleton {
      */
     public static void shiftArrayValues(int[] toDecrypt) {
     	for(int i = 0; i < toDecrypt.length; i++) {
-    		toDecrypt[i] -= 1 - (toDecrypt[i] % 3);
+    		toDecrypt[i] -= 1 - (i % 3);
     		/*if(i % 3 == 0) {
     			toDecrypt[i] -= 1;
     		}
