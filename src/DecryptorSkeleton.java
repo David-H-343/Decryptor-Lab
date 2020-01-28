@@ -83,18 +83,18 @@ public class DecryptorSkeleton {
      * @param toDecrypt - The array to be decoded.
      */
     public static void shiftArrayValues(int[] toDecrypt) {
-    	for(int i = 0; i < toDecrypt.length; i++) {
-    		toDecrypt[i] -= 1 - (toDecrypt[i] % 3);
-    		/*if(i % 3 == 0) {
-    			toDecrypt[i] -= 1;
-    		}
-    		else if(i % 3 == 1) {
-    			toDecrypt[i] -= 2;
-    		}
-    		else {
-    			toDecrypt[i] -= 3;
-    		}*/
-    	}
+        for (int i = 0; i < toDecrypt.length; i++) {
+            toDecrypt[i] -= 1 - (toDecrypt[i] % 3);
+            /*if(i % 3 == 0) {
+             toDecrypt[i] -= 1;
+             }
+             else if(i % 3 == 1) {
+             toDecrypt[i] -= 2;
+             }
+             else {
+             toDecrypt[i] -= 3;
+             }*/
+        }
     }
 
     /**
@@ -108,10 +108,9 @@ public class DecryptorSkeleton {
      *
      * @param toDecrypt - The array to be decoded.
      */
-    
     public static void divideArrayValues(int[] toDecrypt) {
-    	for(int i = 0; i < toDecrypt.length; i++) {
-        	toDecrypt[i] /= 5;
+        for (int i = 0; i < toDecrypt.length; i++) {
+            toDecrypt[i] /= 5;
         }
     }
 
@@ -158,9 +157,8 @@ public class DecryptorSkeleton {
 
         StringBuilder solution = new StringBuilder();
 
-        for(int i=0; i<toDecrypt.length; i++)
-        {
-        solution.append(cypher.get(toDecrypt[i]));
+        for (int i = 0; i < toDecrypt.length; i++) {
+            solution.append(cypher.get(toDecrypt[i]));
         }
         // TODO
         solution.append('!');
