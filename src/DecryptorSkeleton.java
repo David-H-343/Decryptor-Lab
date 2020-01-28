@@ -83,9 +83,7 @@ public class DecryptorSkeleton {
      * @param toDecrypt - The array to be decoded.
      */
     public static void shiftArrayValues(int[] toDecrypt) {
-    	for(int i = 0; i < toDecrypt.length; i++) {
-        	toDecrypt[i] /= 5;
-        }
+    	
     }
 
     /**
@@ -101,7 +99,9 @@ public class DecryptorSkeleton {
      */
     
     public static void divideArrayValues(int[] toDecrypt) {
-        // TODO
+    	for(int i = 0; i < toDecrypt.length; i++) {
+        	toDecrypt[i] /= 5;
+        }
     }
 
     /**
