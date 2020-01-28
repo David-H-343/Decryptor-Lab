@@ -38,6 +38,7 @@ public class DecryptorSkeleton {
             1001100, 1101011, 1011101, 1, 1100, 1011101, 11010, 111, 111010
         };
 
+        // First Method done
         convertBinaryArrayToDecimalArray(toDecrypt);
         System.out.println(Arrays.toString(toDecrypt)); // As a check, the first value will be 41 and the last is 58.
 
