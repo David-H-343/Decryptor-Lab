@@ -25,9 +25,9 @@ import java.util.HashMap;
  * Place your @author tags here.
  *
  * @author David Harmon : dharmon1@iastate.edu
- * @author Daniel Andrews : danieljr@iastate.edu
- * @author Kenyon Fergen : bkfergen@iastate.edu
- * @author Isaac Wolfinsohn : idw@iastate.edu
+ * @author dAniel Andrews : danieljr@iastate.edu
+ * @author keNyon Fergen : bkfergen@iastate.edu
+ * @author isaAc Wolfinsohn : idw@iastate.edu
  */
 public class DecryptorSkeleton {
 
