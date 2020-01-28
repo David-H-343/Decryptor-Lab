@@ -25,9 +25,9 @@ import java.util.HashMap;
  * Place your @author tags here.
  *
  * @author David Harmon : dharmon1@iastate.edu
- * @author Daniel Andrews : danieljr@iastate.edu
- * @author Kenyon Fergen : bkfergen@iastate.edu
- * @author Isaac Wolfinsohn : idw@iastate.edu
+ * @author dAniel Andrews : danieljr@iastate.edu
+ * @author keNyon Fergen : bkfergen@iastate.edu
+ * @author isaAc Wolfinsohn : idw@iastate.edu
  */
 public class DecryptorSkeleton {
 
@@ -83,6 +83,7 @@ public class DecryptorSkeleton {
      * @param toDecrypt - The array to be decoded.
      */
     public static void shiftArrayValues(int[] toDecrypt) {
+<<<<<<< HEAD
     	for(int i = 0; i < toDecrypt.length; i++) {
     		toDecrypt[i] -= 1 - (i % 3);
     		/*if(i % 3 == 0) {
@@ -95,6 +96,20 @@ public class DecryptorSkeleton {
     			toDecrypt[i] -= 3;
     		}*/
     	}
+=======
+        for (int i = 0; i < toDecrypt.length; i++) {
+            toDecrypt[i] -= 1 - (toDecrypt[i] % 3);
+            /*if(i % 3 == 0) {
+             toDecrypt[i] -= 1;
+             }
+             else if(i % 3 == 1) {
+             toDecrypt[i] -= 2;
+             }
+             else {
+             toDecrypt[i] -= 3;
+             }*/
+        }
+>>>>>>> 6a8e6187be7d24e63c3aafedfe8d1a9c9f4be6d6
     }
 
     /**
@@ -108,10 +123,9 @@ public class DecryptorSkeleton {
      *
      * @param toDecrypt - The array to be decoded.
      */
-    
     public static void divideArrayValues(int[] toDecrypt) {
-    	for(int i = 0; i < toDecrypt.length; i++) {
-        	toDecrypt[i] /= 5;
+        for (int i = 0; i < toDecrypt.length; i++) {
+            toDecrypt[i] /= 5;
         }
     }
 
@@ -158,9 +172,8 @@ public class DecryptorSkeleton {
 
         StringBuilder solution = new StringBuilder();
 
-        for(int i=0; i<toDecrypt.length; i++)
-        {
-        solution.append(cypher.get(toDecrypt[i]));
+        for (int i = 0; i < toDecrypt.length; i++) {
+            solution.append(cypher.get(toDecrypt[i]));
         }
         // TODO
         solution.append('!');
