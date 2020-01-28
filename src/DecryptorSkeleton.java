@@ -27,7 +27,7 @@ import java.util.HashMap;
  * @author David Harmon : dharmon1@iastate.edu
  * @author ...
  * @author Kenyon Fergen : bkfergen@iastate.edu
- * @author ...
+ * @author Isaac Wolfinsohn : idw@iastate.edu
  */
 public class DecryptorSkeleton {
 
