@@ -25,7 +25,7 @@ import java.util.HashMap;
  * Place your @author tags here.
  *
  * @author David Harmon : dharmon1@iastate.edu
- * @author ...
+ * @author Daniel Andrews : danieljr@iastate.edu
  * @author Kenyon Fergen : bkfergen@iastate.edu
  * @author Isaac Wolfinsohn : idw@iastate.edu
  */
