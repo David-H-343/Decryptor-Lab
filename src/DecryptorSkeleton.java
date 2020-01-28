@@ -83,7 +83,6 @@ public class DecryptorSkeleton {
      * @param toDecrypt - The array to be decoded.
      */
     public static void shiftArrayValues(int[] toDecrypt) {
-<<<<<<< HEAD
     	for(int i = 0; i < toDecrypt.length; i++) {
     		toDecrypt[i] -= 1 - (i % 3);
     		/*if(i % 3 == 0) {
@@ -96,21 +95,7 @@ public class DecryptorSkeleton {
     			toDecrypt[i] -= 3;
     		}*/
     	}
-=======
-        for (int i = 0; i < toDecrypt.length; i++) {
-            toDecrypt[i] -= 1 - (toDecrypt[i] % 3);
-            /*if(i % 3 == 0) {
-             toDecrypt[i] -= 1;
-             }
-             else if(i % 3 == 1) {
-             toDecrypt[i] -= 2;
-             }
-             else {
-             toDecrypt[i] -= 3;
-             }*/
-        }
->>>>>>> 6a8e6187be7d24e63c3aafedfe8d1a9c9f4be6d6
-    }
+}
 
     /**
      * STEP 3: COMPLETE THIS METHOD. ONCE COMPLETED, HAVE THE TEAM MEMBER WHO
